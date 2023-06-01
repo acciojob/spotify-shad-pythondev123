@@ -33,15 +33,15 @@ public class SpotifyService {
     }
 
     public Playlist createPlaylistOnName(String mobile, String title, List<String> songTitles) throws Exception {
-
+      return spotifyRepository.createPlaylistOnName(mobile, title, songTitles);
     }
 
     public Playlist findPlaylist(String mobile, String playlistTitle) throws Exception {
-
+    return spotifyRepository.findPlaylist(mobile, playlistTitle);
     }
 
     public Song likeSong(String mobile, String songTitle) throws Exception {
-
+   return spotifyRepository.likeSong(mobile, songTitle);
     }
 
     public String mostPopularArtist() {

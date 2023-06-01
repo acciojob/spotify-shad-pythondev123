@@ -76,13 +76,14 @@ public class SpotifyRepository {
     }
 
     public Playlist createPlaylistOnLength(String mobile, String title, int length) throws Exception {
-if(!users.contains(mobile)){
-    throw new Exception("User does not exist");
-}
-int index=users.indexOf(mobile);
-User user= users.get(index);
-Playlist playlist= new Playlist(title);
-for(Song song: )
+        if (!users.contains(mobile)) {
+            throw new Exception("User does not exist");
+        }
+        int index = users.indexOf(mobile);
+        User user = users.get(index);
+        Playlist playlist = new Playlist(title);
+        playlists.add(playlist);
+        return playlist;
     }
 
     public Playlist createPlaylistOnName(String mobile, String title, List<String> songTitles) throws Exception {
