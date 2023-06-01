@@ -5,7 +5,7 @@ public class Song {
     private int length;
     private int likes;
 
-    public Song(){
+    public Song(String title, String albumName, int length){
 
     }
 

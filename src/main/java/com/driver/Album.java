@@ -1,13 +1,12 @@
 package com.driver;
 
 import java.util.Date;
-import java.util.List;
 
 public class Album {
     private String title;
     private Date releaseDate;
 
-    public Album(){
+    public Album(String title, String artistName){
 
     }
 
